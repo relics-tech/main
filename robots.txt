@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://relicstech.uk/sitemap.xml
