@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relics Tech Support | PC Building / Tech Support</title>
-    <meta name="description" content="Get free, expert PC building advice and tech support from passionate volunteers at Relics Tech Support. Join our Discord for personalized help and AI-powered solutions.">
+    <meta name="description" content="WGet free, expert PC building advice and tech support from passionate volunteers at Relics Tech Support. Join our Discord for personalized help and AI-powered solutions.">
     <meta name="keywords" content="free PC building support, tech support UK, build your own PC, PC part picker help, Discord tech support, volunteer tech help, PC troubleshooting, gaming PC advice, computer help UK, Relics Tech Support">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -91,6 +91,27 @@
         .footer-bg {
             background-color: rgba(0, 0, 0, 0.7);
         }
+        .ticket-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #2EC4B6;
+        }
+        .ticket-card:hover {
+            transform: translateX(5px);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .gallery-image {
+            height: 400px;
+            object-fit: contain;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        .gallery-nav-btn {
+            transition: all 0.3s ease;
+            background-color: rgba(0,0,0,0.1);
+        }
+        .gallery-nav-btn:hover {
+            background-color: rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body class="font-sans">
@@ -106,6 +127,7 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link text-gray-700 hover:text-[#F28C82] active-tab" data-tab="home">Home</a>
                 <a href="#staff" class="nav-link text-gray-700 hover:text-[#F28C82]" data-tab="staff">Our Staff</a>
+                <a href="#ticket-guide" class="nav-link text-gray-700 hover:text-[#F28C82]" data-tab="ticket-guide">Ticket Guide</a>
                 <a href="#discord" class="nav-link text-gray-700 hover:text-[#F28C82]" data-tab="discord">Discord</a>
             </nav>
             <button class="md:hidden text-gray-700" id="mobile-menu-button">
@@ -115,6 +137,7 @@
         <div class="md:hidden hidden bg-white w-full py-2 px-4 shadow-md" id="mobile-menu">
             <a href="#home" class="block py-2 text-gray-700 hover:text-[#F28C82]" data-tab="home">Home</a>
             <a href="#staff" class="block py-2 text-gray-700 hover:text-[#F28C82]" data-tab="staff">Our Staff</a>
+            <a href="#ticket-guide" class="block py-2 text-gray-700 hover:text-[#F28C82]" data-tab="ticket-guide">Ticket Guide</a>
             <a href="#discord" class="block py-2 text-gray-700 hover:text-[#F28C82]" data-tab="discord">Discord</a>
         </div>
     </header>
@@ -284,6 +307,84 @@
             </div>
         </section>
 
+        <section id="ticket-guide" class="tab-content py-8">
+            <div class="container mx-auto content-container p-8">
+                <h2 class="text-3xl font-bold text-[#2EC4B6] mb-8 text-center">Ticket Guide</h2>
+                
+                <div class="max-w-4xl mx-auto mb-12">
+                    <div class="ticket-card bg-white rounded-lg shadow-md p-6 mb-8">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
+                                <h3 class="text-2xl font-bold text-[#F28C82] mb-4">Tech Support Tickets</h3>
+                                <a href="https://discord.com/channels/1354544808273772626/1354548016022814951" target="_blank" class="text-[#2EC4B6] hover:underline flex items-center">
+                                    <i class="fab fa-discord mr-2"></i> #tech-support channel
+                                </a>
+                            </div>
+                            <div class="md:w-2/3">
+                                <p class="text-gray-700 mb-4">
+                                    Our tech support tickets provide direct access to our trained specialists who can help diagnose and resolve your technical issues. Whether you're dealing with hardware malfunctions, software errors, or system performance problems, we're here to help.
+                                </p>
+                                <p class="text-gray-700 mb-6">
+                                    When opening a ticket, you'll be asked to provide details about your issue, what troubleshooting steps you've already tried, and information about your operating system. This helps our specialists quickly understand your situation and provide the most effective assistance.
+                                </p>
+                                <img src="https://i.imgur.com/W4CNMiR.png" alt="Tech Support Ticket Form" class="w-full rounded-lg border border-gray-200">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ticket-card bg-white rounded-lg shadow-md p-6">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
+                                <h3 class="text-2xl font-bold text-[#2EC4B6] mb-4">PC Building Tickets</h3>
+                                <a href="https://discord.com/channels/1354544808273772626/1358570971216347156" target="_blank" class="text-[#F28C82] hover:underline flex items-center">
+                                    <i class="fab fa-discord mr-2"></i> #pc-building channel
+                                </a>
+                            </div>
+                            <div class="md:w-2/3">
+                                <p class="text-gray-700 mb-4">
+                                    Our PC building service helps you create the perfect custom computer tailored to your specific needs and budget. Whether you're building a gaming powerhouse, a content creation workstation, or an everyday productivity machine, our specialists will guide you through component selection and optimization.
+                                </p>
+                                <p class="text-gray-700 mb-6">
+                                    The ticket form will ask about your budget, intended use for the PC, and any specific preferences you have. This information allows us to recommend components that perfectly match your requirements.
+                                </p>
+                                <img src="https://i.imgur.com/PNliHKK.png" alt="PC Building Ticket Form" class="w-full rounded-lg border border-gray-200">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-center text-[#2EC4B6] mb-8">PC Building Form Gallery</h3>
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="relative">
+                            <div class="overflow-hidden">
+                                <div id="gallery-container" class="flex transition-transform duration-300">
+                                    <img src="https://i.imgur.com/jxvVwhp.png" alt="PC Building Form 1" class="gallery-image w-full flex-shrink-0">
+                                    <img src="https://i.imgur.com/Tj6XewS.png" alt="PC Building Form 2" class="gallery-image w-full flex-shrink-0">
+                                    <img src="https://i.imgur.com/5gVgTM9.png" alt="PC Building Form 3" class="gallery-image w-full flex-shrink-0">
+                                    <img src="https://i.imgur.com/dbszHvX.png" alt="PC Building Form 4" class="gallery-image w-full flex-shrink-0">
+                                    <img src="https://i.imgur.com/b8olhCh.png" alt="PC Building Form 5" class="gallery-image w-full flex-shrink-0">
+                                </div>
+                            </div>
+                            <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md gallery-nav-btn ml-2">
+                                <i class="fas fa-chevron-left text-gray-700"></i>
+                            </button>
+                            <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md gallery-nav-btn mr-2">
+                                <i class="fas fa-chevron-right text-gray-700"></i>
+                            </button>
+                        </div>
+                        <div class="flex justify-center mt-4 space-x-2" id="gallery-dots">
+                            <button class="w-3 h-3 rounded-full bg-gray-300 dot-btn" data-index="0"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300 dot-btn" data-index="1"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300 dot-btn" data-index="2"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300 dot-btn" data-index="3"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300 dot-btn" data-index="4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     
         <section id="discord" class="tab-content py-8">
             <div class="container mx-auto content-container p-8">
@@ -426,7 +527,6 @@
     </footer>
 
     <script>
-    
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -472,6 +572,47 @@
         
 
         document.querySelector('[data-tab="home"]').classList.add('active-tab');
+
+       
+        const galleryContainer = document.getElementById('gallery-container');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dots = document.querySelectorAll('.dot-btn');
+        let currentIndex = 0;
+        const totalImages = document.querySelectorAll('#gallery-container img').length;
+
+        function updateGallery() {
+            galleryContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-[#2EC4B6]');
+                } else {
+                    dot.classList.remove('bg-[#2EC4B6]');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateGallery();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateGallery();
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentIndex = parseInt(dot.getAttribute('data-index'));
+                updateGallery();
+            });
+        });
+
+        updateGallery();
     </script>
 </body>
 </html>
